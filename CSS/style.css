@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Aileron;
+    src: url("aileron.thin.otf") format("opentype");
+}
+@font-face {
+    font-family: Canter-Light;
+    src: url("canter.light.otf") format("opentype");
+}
+@font-face {
+    font-family: Canter-Bold;
+    src: url("canter.bold.otf") format("opentype");
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Aileron, sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-family: Canter-Light;
+    letter-spacing: 3px;
+}
+.container{
+   max-width: 800px;
+}
+.title-wraper{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+
+}
+.underline{
+    position: absolute;
+}
+.underline::after{
+    content: "";
+    position: relative;
+    display: block;
+    border-top: 1px solid black;
+    width: 40%;
+}
+.header-title{
+    height: 50px;
+    position: absolute;
+    text-transform: uppercase;
+
+}
+.header-title::after{
+    content: "";
+    position: relative;
+    display: block;
+    border-top: 1px solid black;
+    width: 40%;
+}
+
+.profile{
+    background-color: #e4e4e3;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.profile-img{
+    display: block;
+    border-radius: 50%;
+    align-self: center;
+    width: 18vh;
+}
+.name{
+    font-family: Canter-Bold;
+    font-size: 6rem;
+    align-self: flex-end;
+    color: #383736;
+}
+.data-section{
+    margin: 3rem 4rem;
+    border-left: 2px solid black;
+}
+.list-cleaner{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.item-data{
+  /* border-left: 2px solid black; */
+  padding: 0.2rem 0 0.2rem 3rem;
+}
+.item-title{
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 0 0 0 3rem;
+  line-height: 36px;
+}
+.data-icon{
+    font-size: 2.5rem;
+    position: absolute;
+    left: -1.25rem;
+}
+.item-info-title{
+    font-weight: bold;
+}
+.item .data-icon{
+  font-size: 1rem;
+  left: -0.5rem;
+}
