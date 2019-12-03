@@ -82,7 +82,9 @@ p{
 main{
   padding: 3rem 5rem;
 }
-
+section{
+  margin-bottom: 5%;
+}
 .main-title{
   position: relative;
   display: inline-block;
@@ -117,7 +119,7 @@ main{
   border: 1px solid #000;
   border-radius: 50%;
   top: 25%;
-  left: -3.5rem;
+  left: -3.55rem;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
