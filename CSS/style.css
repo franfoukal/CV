@@ -146,7 +146,6 @@ section {
 }
 .dated-info {
   display: flex;
-  justify-content: space-around;
 }
 .date {
   display: inline-block;
