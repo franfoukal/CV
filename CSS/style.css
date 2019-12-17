@@ -17,6 +17,7 @@
   src: url("canter.bold.otf") format("opentype");
   font-weight: bold;
 }
+
 /* html{
   font-size: 62.5%;
   * 1rem = 10px (aproximado para el diseño)*
@@ -29,6 +30,8 @@
 }
 body {
   font-family: Aileron, sans-serif;
+  background-image: url(../img/pattern4.png);
+  background-attachment: fixed;
 }
 h1,
 h2,
@@ -43,12 +46,30 @@ p, li {
   margin: 0 0 0.5rem 0;
   color: #757373;
 }
+.content{
+  margin: 5% 0;
+}
 .container-fluid {
   max-width: 800px;
-  margin: 0 auto !important;
+  margin: 1% auto !important;
   padding: 0;
   margin: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 7px 10px 16px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 10px 16px -2px rgba(0,0,0,0.75);
+  box-shadow: 7px 10px 16px -2px rgba(0,0,0,0.75);
 }
+/*
+.main-page{
+  display: flex;
+  flex-flow: column wrap;
+  height: 2400px;
+  align-items: space-around;
+} */
+
+/* .skills-section{
+  align-self: center;
+} */
 
 .underline::after {
   content: "";
@@ -101,7 +122,9 @@ main {
 }
 section {
   margin-bottom: 10%;
+  /* max-width: 50%; /* para masonry view */
 }
+
 .section-header{
   position: relative;
 }
@@ -168,12 +191,30 @@ section {
 .item-list li p {
   margin: 0;
 }
-.dated-info {
+
+/* .dated-info {
 
 }
 .date {
 }
 .date-title{
+} */
+
+.prog-skill{
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.item-list li{
+  margin-bottom: 1rem;
+}
+.skills-section .item-list li ul{
+  list-style-type: none;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+.stars{
+  margin-left: 1rem;
+  font-size: .6rem;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -183,5 +224,48 @@ section {
 
   main {
     padding: 3rem 3rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .name {
+    font-size: 3rem;
+  }
+
+  main {
+    padding: 3rem 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-fluid{
+    max-width: 800px;
+  }
+  .profile{
+    height: 20vh;
+  }
+  .profile-img{
+    width: 18vh;
+  }
+  .name {
+    font-size: 3rem;
+  }
+
+  main {
+    padding: 3rem 3rem;
+  }
+}
+
+@media print {
+  .container-fluid {
+    max-width: none;
+    width: 90%;
+    height: 100%;
+  }
+  .profile{
+    height: 10vh;
+  }
+  .profile-img{
+    width: 8vh;
   }
 }
