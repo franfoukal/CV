@@ -95,6 +95,7 @@ p, li {
 .profile {
   background-color: #e4e4e3;
   height: 25vh;
+  max-height: 250px;
   display: flex;
   justify-content: space-between;
   padding: 0 5%;
