@@ -30,7 +30,7 @@
 }
 body {
   font-family: Aileron, sans-serif;
-  background-image: url(../img/pattern4.png);
+  background-image: url(../img/pattern3.png);
   background-attachment: fixed;
 }
 h1,
@@ -80,6 +80,12 @@ p, li {
 .upcase{
   text-transform: uppercase;
 }
+.clearlist{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* HEADER */
 
 .title-wraper {
@@ -209,9 +215,12 @@ section {
 }
 .skills-section .item-list li ul{
   list-style-type: none;
-  padding-left: 2rem;
+  padding-left: .7rem;
   margin-bottom: 1rem;
 }
+/* .skills-section .item-list li ul li{
+  margin: 0
+} */
 .stars{
   margin-left: 1rem;
   font-size: .6rem;
