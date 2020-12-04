@@ -243,9 +243,13 @@ section {
 @media print {
   body {
     background: none;
+    width: 100vw;
+  }
+  .container-fluid{
+    margin: 10rem;
   }
   .profile{
-    height: 12vh;
+    height: 10vh;
   }
    .profile-img {
   display: block;
@@ -254,6 +258,8 @@ section {
   width: auto;
   height: 80%;
   border: 2px solid #fff;
-  
-}
+  }
+  .break-page{
+    page-break-after: always;
+  }
 }
